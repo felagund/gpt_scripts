@@ -259,7 +259,7 @@ help='Output directory, defaults to "GPX Files (For Locus Map app)" placed in th
 default='GPX Files (For Locus Map app)')
 
 parser.add_argument("--delete_previous_custom_output",
-help='If custom output directory specified, it will get deleted if this optino is used',
+help='If custom output directory specified, it will get deleted if this option is used',
 action="store_true")
 
 args = parser.parse_args()
