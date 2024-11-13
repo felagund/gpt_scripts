@@ -1,0 +1,21 @@
+# This is released into public domain.
+# Specifies groupings of sections, can be modified
+# Anything before the first " GPT" is used as name of the file for the groupings
+# Range is specified by the two gpt strings, so to have a group from GPT01 to GPT1O, one would do
+# Z - Custom Group gpt01 - GPT10
+A - Precordillera GPT01 - GPT04
+B - Arrieros GPT05 - GPT09
+C - Pehuenche GPT10 - GPT16
+D - Lagos Chilenos GPT17 - GPT22
+E - Lagos Argentinos GPT23 - GPT26
+F - Sector Palena GPT27 - GPT30
+G - Aysen Norte  GPT29 - GPT31
+H - Aysen Sur GPT32 - GPT37
+I - Campo de Hielo Sur 1 GPT38 - GPT40
+J - Campo de Hielo Sur 2 GPT41 - GPT46
+K - Magallanes GPT47 - GPT50
+L - Tierra del Fuego GPT60 - GPT69
+M - Sector Yelcho GPT70 - GPT75
+N - Fiordos Norte GPT76 - GPT78
+O - Campo de Hielo Norte GPT80 - GPT83
+P - Fjordos Sur GPT90 - GPT92

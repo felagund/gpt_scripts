@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   data-name="Layer 1"
+   viewBox="0 0 96.000001 96"
+   x="0px"
+   y="0px"
+   version="1.1"
+   id="svg14"
+   sodipodi:docname="road_end.svg"
+   width="96"
+   height="96"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:export-filename="/home/drew/Desktop/Na_cestu/dev/Icons/road_end.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs18">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1084">
+      <use
+         x="0"
+         y="0"
+         xlink:href="#g1080"
+         id="use1086" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview16"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="8.409041"
+     inkscape:cx="64.632816"
+     inkscape:cy="85.978889"
+     inkscape:window-width="2560"
+     inkscape:window-height="1380"
+     inkscape:window-x="5760"
+     inkscape:window-y="396"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg14" />
+  <title
+     id="title2">Dead_end-RAD</title>
+  <g
+     id="g1082"
+     clip-path="url(#clipPath1084)"
+     transform="translate(0,0.576214)">
+    <g
+       inkscape:label="Clip"
+       id="g1080">
+      <path
+         d="M 84.752324,94.847572 H 11.247674 A 10.176911,10.286479 0 0 1 1.081948,84.572397 V 10.275173 A 10.176911,10.286479 0 0 1 11.247687,0 H 84.752324 A 10.176911,10.286479 0 0 1 94.918052,10.275173 V 84.572397 A 10.176911,10.286479 0 0 1 84.752324,94.847572 Z M 11.247674,4.5002495 A 5.7191405,5.7807149 0 0 0 5.5342646,10.275173 v 74.297224 a 5.7191405,5.7807149 0 0 0 5.7134094,5.774923 h 73.50465 a 5.7191405,5.7807149 0 0 0 5.71341,-5.774923 V 10.275173 a 5.7191405,5.7807149 0 0 0 -5.71341,-5.7749235 z"
+         id="path4"
+         style="stroke-width:0.243811" />
+      <rect
+         x="41.911812"
+         y="35.078018"
+         width="12.176373"
+         height="50.757683"
+         id="rect6"
+         style="stroke-width:0.243811" />
+      <rect
+         x="25.312729"
+         y="13.559399"
+         width="45.374542"
+         height="20.29302"
+         id="rect8"
+         style="stroke-width:0.243811" />
+    </g>
+  </g>
+  <metadata
+     id="metadata835">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Dead_end-RAD</dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="fill:#44aa00;stroke:#2c2825;stroke-width:0.011892;stroke-linecap:round"
+     d="M 47.984069,4.3136236 C 35.670053,4.3431156 23.35481,4.2515833 11.041641,4.4090845 8.1867132,4.2906504 5.6985341,6.5636611 4.95183,9.2203074 4.5959151,10.520591 4.8806418,11.919457 4.7893021,13.259538 c 0,24.338884 0,48.677766 0,73.01665 0.5887047,2.529241 2.6351377,4.897284 5.2986589,5.242219 10.08956,0.180053 20.182634,0.08931 30.273638,0.125216 14.759617,-0.02176 29.520098,0.06897 44.279128,-0.07396 1.689771,0.124475 3.376297,-0.512446 4.565947,-1.718922 1.351191,-1.286538 2.069778,-3.153387 1.943361,-5.013205 0.147829,-15.415357 0.05689,-30.832171 0.0851,-46.248121 -0.03564,-9.255363 0.08309,-18.513303 -0.12821,-27.76682 C 91.099284,9.572009 90.958356,8.2617791 90.138522,7.2550261 89.066584,5.7978915 87.473238,4.457232 85.566231,4.4885419 78.806355,4.2213556 72.037036,4.3579727 65.273171,4.3131902 59.510137,4.3121659 53.747103,4.3134905 47.984069,4.3136236 Z m 0,10.6377324 c 7.304576,0 14.609152,0 21.913728,0 0,6.245138 0,12.490276 0,18.735415 -14.609152,0 -29.218304,0 -43.827457,0 0,-6.245139 0,-12.490277 0,-18.735415 7.304576,0 14.609153,0 21.913729,0 z m 0.05946,21.524452 c 1.774813,0 3.549627,0 5.32444,0 0,16.392946 0,32.785893 0,49.17884 -3.549627,0 -7.099254,0 -10.648881,0 0,-16.392947 0,-32.785894 0,-49.17884 1.774813,0 3.549627,0 5.324441,0 z"
+     id="path1158" />
+</svg>
