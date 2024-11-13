@@ -12,7 +12,7 @@ It transforms the general GPT track files for Smartphones into map with custom-s
 * `icons.txt`
 * `locus_style.txt`
 * `section_groups.txt`
-* 
+  
 See the files to see how to change them to change appearance. The zip files with the icons `gpt_icons.zip` needs to be put  to `Android/data/menion.android.locus/files/Locus/icons/. This needs to be done from a computer (since Android 11, app directories are not accessible from a phone). More info about custom icons for Locus here: https://docs.locusmap.app/doku.php?id=manual:advanced:customization:icons.
 
 These are the icons:
@@ -44,7 +44,7 @@ options:
 
 # connect_tracks.py #
 
-It works on the GPT master KMZ file. It mainly connects the endpoint so there are not gaps between tracks, which should make routing easier and it also looks prettier. It also divides tracks that meet another option variant and are not broken into smaller segments. To rename them with proper km info, you need to run https://github.com/dave/gpt/blob/master/README.md afterwards. It expects a `GPT Master.kmz`in the working directory but its location can be also specified.
+It works on the GPT master KMZ file. It mainly connects the endpoint so there are not gaps between tracks, which should make routing easier and it also looks prettier. It also divides tracks that meet another option variant and are not broken into smaller segments. To rename them with proper km info, you need to run https://github.com/dave/gpt/ afterwards. It expects a `GPT Master.kmz`in the working directory but its location can be also specified.
 
 ### Usage
 ```
