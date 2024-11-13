@@ -15,6 +15,10 @@ It transforms the general GPT track files for Smartphones into map with custom-s
 * 
 See the files to see how to change them to change appearance. The zip files with the icons `gpt_icons.zip` needs to be put  to `Android/data/menion.android.locus/files/Locus/icons/. This needs to be done from a computer (since Android 11, app directories are not accessible from a phone). More info about custom icons for Locus here: https://docs.locusmap.app/doku.php?id=manual:advanced:customization:icons.
 
+These are the icons:
+
+![alt text](https://github.com/felagund/gpt_scripts/blob/master/Screenshots/alll_icons.png?raw=true)
+
 ### Usage ###
 ```
 make_gpx_for_locus.py [-h] [-t TRACKS] [-w WAYPOINTS] [-ls LOCUS_STYLE] [-ic ICON_MAPPING] [-sg SECTION_GROUPS] [-o OUTPUT] [--delete_previous_custom_output]
