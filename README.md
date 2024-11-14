@@ -24,15 +24,21 @@ These are the icons:
 
 ### Usage ###
 ```
-make_gpx_for_locus.py [-h] [-t TRACKS] [-w WAYPOINTS] [-ls LOCUS_STYLE] [-ic ICON_MAPPING] [-sg SECTION_GROUPS] [-o OUTPUT] [--delete_previous_custom_output]
+make_gpx_for_locus.py [-h] [-d DIRECTORY] [-t TRACKS] [-w WAYPOINTS] [-ls LOCUS_STYLE] [-ic ICON_MAPPING] [-sg SECTION_GROUPS] [-o OUTPUT]
+                             [--delete_previous_custom_output]
 
 options:
   -h, --help            show this help message and exit
+  -d DIRECTORY, --directory DIRECTORY
+                        Default folder with tracks and waypoinrtsis, defaults to "GPT Track Files YEAR/GPX Files (For Smartphones and Basecamp)/ placed in
+                        the working directory. The folder is assumed to contain folders "Combined Tracks" and "Waypoints".
   -t TRACKS, --tracks TRACKS
-                        Input file with all tracks, defaults to "GPT Track Files YEAR/GPX Files (For Smartphones and Basecamp)/Combined Tracks/All Optional and Regular Tracks (SOME_DATE).gpx" placed in the working directory
+                        Input file with all tracks, defaults to "GPT Track Files YEAR/GPX Files (For Smartphones and Basecamp)/Combined Tracks/All
+                        Optional and Regular Tracks (SOME_DATE).gpx" placed in the working directory
   -w WAYPOINTS, --waypoints WAYPOINTS
-                        Input filder with all waypoints, defaults to "GPT Track Files YEAR/GPX Files (For Smartphones and Basecamp)/Waypoints/" placed in the working directory; it needs to contain the following files: "All Other Waypoints (SOME_DATE).gpx", "Important information (SOME_DATE).gpx" and "Ressuply
-                        Locations (SOME_DATE).gpx" (Starting points are not processed)
+                        Input filder with all waypoints, defaults to "GPT Track Files YEAR/GPX Files (For Smartphones and Basecamp)/Waypoints/" placed in
+                        the working directory; it needs to contain the following files: "All Other Waypoints (SOME_DATE).gpx", "Important information
+                        (SOME_DATE).gpx" and "Ressuply Locations (SOME_DATE).gpx" (Starting points are not processed)
   -ls LOCUS_STYLE, --locus_style LOCUS_STYLE
                         Input Locus style file, defaults to "locus_style.txt" placed in the working directory
   -ic ICON_MAPPING, --icon_mapping ICON_MAPPING
@@ -40,9 +46,11 @@ options:
   -sg SECTION_GROUPS, --section_groups SECTION_GROUPS
                         Input section groups, defaults to "section_groups.txt" placed in the working directory
   -o OUTPUT, --output OUTPUT
-                        Output directory, defaults to "GPX Files (For Locus Map app)" placed in the working directory; which it creates anew with every run, when different custom output directory is specified, no clearing takes place unless explicitly asked
+                        Output directory, defaults to "GPX Files (For Locus Map app)" placed in the working directory; which it creates anew with every
+                        run, when different custom output directory is specified, no clearing takes place unless explicitly asked
   --delete_previous_custom_output
-                        If custom output directory specified, it will get deleted if this optino is used
+                        If custom output directory specified, it will get deleted if this option is used
+
 ```
 
 # connect_tracks.py #

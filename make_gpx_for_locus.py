@@ -236,6 +236,8 @@ def make_style(code,filename):
 
 default_folder = "GPT Track Files YEAR/GPX Files (For Smartphones and Basecamp)/"
 parser = argparse.ArgumentParser()
+parser.add_argument("-d","--directory",
+help='Default folder with tracks and waypoinrtsis, defaults to "' + default_folder + ' placed in the working directory. The folder is assumed to contain folders "Combined Tracks" and "Waypoints".')
 parser.add_argument("-t","--tracks",
 help='Input file with all tracks, defaults to "' + default_folder + 'Combined Tracks/All Optional and Regular Tracks (SOME_DATE).gpx" placed in the working directory')
 
@@ -269,8 +271,11 @@ print("Parsing input files")
 if args.tracks:
     tracks_filename = args.tracks
 else:
-    d = next(Path(".").glob("GPT Track Files *"))
-    data_source_folder = d / "GPX Files (For Smartphones and Basecamp)/"
+    if args.directory:
+        data_source_folder = Path(args.directory)
+    else:
+        d = next(Path(".").glob("GPT Track Files *"))
+        data_source_folder = d / "GPX Files (For Smartphones and Basecamp)/"
     tracks_source_folder = data_source_folder / "Combined Tracks"
     tracks_source_filename = next(tracks_source_folder.glob("All Optional and Regular Tracks*.gpx"))
 # Get waypoint folder to read if not specified via command line

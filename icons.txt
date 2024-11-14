@@ -4,6 +4,7 @@
 # Third column is a human readable description of the icon.
 # Valid file has comments starting with "#" or lines with three values divided with two semicolons.
 Airfield;airplane;Green airplane
+Airfield Abandoned;airplane_abandoned;Grey airplane
 Airport;airplane;Green airplane
 Border;border_fence;Fence with barbed wire
 Border AR/CL;border_fence;Fence with barbed wire
@@ -14,15 +15,17 @@ Bridge;bridge;Green bridge
 Bridge ?;bridge_maybe;Green bridge
 Building;building;Green 3D building
 Buildings;building;Green 3D building
+Building Abandoned;building_bandoned;Grey 3D building
 Bus;bus;Green bus
 Bus ?;bus_maybe;Yellow bus
 Camp;camp;Green tent
 Camp ?;camp_maybe_water;Yellow tent
 Camp $;camp_money;Orange tent
 Camp Without Water;camp_no_water;Red tent
+NO Camp;camp_no,Grey tent with a red no sign
 Danger;danger;Green skull over white bones
 Emergency Camp;camp_emergency;Purple tent
-Emergency Exit;emergency_exit;Green person with red ged running with and arrow into green door˚
+Emergency Exit;emergency_exit;Green person running into green door and red arrow
 Fence;fence;Green fence
 Ferry;ferry,Green ferry;
 Ferry ?;ferry_maybe,Yellow ferry;
@@ -48,6 +51,7 @@ Lake;lake;Green lake
 Lake/Lake;lake;Green lake
 Lake/River;lake;Green lake
 Landmark;landmark;Green obelisk
+Landmark Abandoned;landmark_abandoned;Grey obelisk
 Lodging;lodging;Green person sleeping in a bed under roof
 Lodging ?;lodging_maybe;Yellow person sleeping in a bed under roof
 Lodging $;lodging_money;Orange person sleeping in a bed under roof
@@ -63,12 +67,14 @@ Port;port;Green ship under crane
 Port ?;port_maybe;Yellow ship under crane
 Puesto;puesto; Green simple house drawing
 Puesto ?;puesto_maybe; Yellow simple house drawing
+Puesto Abandoned;puesto_abandoned Grey simple house drawing
 Puesto Without Water;puesto_no_water;Red simple house drawing
 Rapid;rapid;Green waterfall
 Rapids End;rapids_end;Green waterfall with red triangle and a vertical bar
 Rapids Start;rapids_start;Green waterfall with green triangle
 Refuge;refuge;Backpacker under shelter, green background
 Refuge ?;refuge_maybe;Backpacker under shelter, yellowbackground
+Refuge Abandoned;refuge_abandoned;Backpacker under shelter, grey background
 Refuge Without Water;refuge_no_water;Backpacker under shelter, red background
 River;lake;Green lake
 River In;river_in;Green river with a green arrow pointing to a door
@@ -81,6 +87,7 @@ Road End;road_end;Green dead end sign
 Settlement;settlement; Three green houses
 Settler;settler;Green farmer
 Settler ?;settler_maybe;Yellow farmer
+Settler Abandoned;settler_abandoned;Grey farmer
 Shop;shop;Green supermarket trolley
 Shop ?;shop_maybe;Yellow supermarket trolley
 Shops;shop;Green supermarket trolley
