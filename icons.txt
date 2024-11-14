@@ -1,97 +1,99 @@
 # This is released into public domain.
-#maps points onto icons, icons are 96x96 pointing
-#first is the name of the point with two exceptions: Important and Supply point are based on folder names
-#third column is a human readable description of the icon
-# valid files has comments starting with "#" or lines with three values divided with two semicolons
-Camp;camp;Green tent
-Camp ?;camp_maybe_water;Yellow tent
-Camp $;camp_maybe_water;Orange tent
-Camp Without Water;camp_no_water;Red tent
-Emergency Camp;camp_emergency;Purple tent
-Settler;settler;Green farmer
-Settler ?;settler_maybe;Yellow farmer
-Supply Point;suply_point;Colourful cornucopia
-Important;important;Red exclamation mark on a green circle
-Ford;ford;Green river with banks with bidirectional arrow
-Fords;ford;Green river with banks with bidirectional arrow
-Ford ?;ford_maybe;Yellow river with banks with bidirectional arrow
-Fords ?;ford_maybe;Yellow river with banks with bidirectional arrow
-X;crossroad;Green Y-shaped crossroad
-Bridge;bridge;Green bridge
-Bridge ?;bridge_maybe;Green bridge
-Water;water;Green droplet
-Water ?;water_maybe;Yellow droplet
-Puesto;puesto; Green simple house drawing
-Puesto ?;puesto_maybe; Yellow simple house drawing
-Puesto Without Water;puesto_no_water;Red simple house drawing
-Pass;pass;Green way going into mountains
-Pass ?;pass_maybe;Yellow way going into mountains
-Building;building;Green 3D building
-Buildings;building;Green 3D building
-Lake;lake;Green lake
-Fjord;lake;Green lake
-Lake/River;lake;Green lake
-River/Lake;lake;Green lake
-River/Fjord;lake;Green lake
-River;lake;Green lake
-River/River;lake;Green lake
-Lake/Lake;lake;Green lake
-Fjord/River;lake;Green lake
-Settlement;settlement; Three green houses
-Gate;gate;Green gate
-Gate ?;gate_maybe;Yellow gate
-Rapid;rapid;Green waterfall
-Rapids Start;rapids_start;Green waterfall with green triangle
-Rapids End;rapids_end;Green waterfall with red triangle and a vertical bar
-Refuge;refuge;Backpacker under shelter, green background
-Refuge ?;refuge_maybe;Backpacker under shelter, yellowbackground
-Refuge Without Water;refuge_no_water;Backpacker under shelter, red background
-Port;port;Green ship under crane
-Port ?;port_maybe;Yellow ship under crane
+# Maps points onto icons, icons are 96x96.
+# First is the name of the point with two exceptions: Important and Supply point are based on folder names.
+# Third column is a human readable description of the icon.
+# Valid file has comments starting with "#" or lines with three values divided with two semicolons.
 Airfield;airplane;Green airplane
 Airport;airplane;Green airplane
-Summit;summit;Flag on a green mountain
-River In;river_in;Green river with a green arrow pointing to a door
-River In ?;river_in_maybe;Yellow river with a green arrow pointing to a door
-River Out;river_out;Green river with a red arrow pointing from a door
-Landmark;landmark;Green obelisk
+Border;border_fence;Fence with barbed wire
+Border AR/CL;border_fence;Fence with barbed wire
+Border Control AR;border_control;Hand holding a green passport
+Border Control AR/CL;border_control;Hand holding a green passport
+Border Control CL;border_control;Hand holding a green passport
+Bridge;bridge;Green bridge
+Bridge ?;bridge_maybe;Green bridge
+Building;building;Green 3D building
+Buildings;building;Green 3D building
+Bus;bus;Green bus
+Bus ?;bus_maybe;Yellow bus
+Camp;camp;Green tent
+Camp ?;camp_maybe_water;Yellow tent
+Camp $;camp_money;Orange tent
+Camp Without Water;camp_no_water;Red tent
+Danger;danger;Green skull over white bones
+Emergency Camp;camp_emergency;Purple tent
+Emergency Exit;emergency_exit;Green person with red ged running with and arrow into green door˚
+Fence;fence;Green fence
+Ferry;ferry,Green ferry;
+Ferry ?;ferry_maybe,Yellow ferry;
+Fjord;lake;Green lake
+Fjord/River;lake;Green lake
+Food;food;brown bun with green apple
+Food ?;food_maybe;brown bun with yellow apple
+Ford;ford;Green river with banks with bidirectional arrow
+Ford ?;ford_maybe;Yellow river with banks with bidirectional arrow
+Fords;ford;Green river with banks with bidirectional arrow
+Fords ?;ford_maybe;Yellow river with banks with bidirectional arrow
+Fords End;fords;Ford icon with in and out subicons
+Fords Start;fords;Ford icon with in and out subicons
+Fords Start/End;fords;Ford icon with in and out subicons
+Gate;gate;Green gate
+Gate ?;gate_maybe;Yellow gate
+Gendarmeria;police;Green police car
 Hot Spring;hot_spring;Green hotspring
 Hot Spring ?;hot_spring_maybe;Red hotspring
 Hot Spring $;hot_spring_money;Orange hotspring
-Ferry;ferry,Green ferry
-Ferry ?;ferry_maybe,Yellow ferry
-Viewpoint;viewpoint;Binoculars
-Trail;trail;Green map of trail
-Trailhead;trail;Green map of trail
-Trail ?;trail_maybe;Yellow map of trail
-Trailhead ?;trail_maybe;Yellow map of trail
+Important;important;Red exclamation mark on a green circle
+Lake;lake;Green lake
+Lake/Lake;lake;Green lake
+Lake/River;lake;Green lake
+Landmark;landmark;Green obelisk
 Lodging;lodging;Green person sleeping in a bed under roof
 Lodging ?;lodging_maybe;Yellow person sleeping in a bed under roof
-Lodging $$$;lodging_money;Orange person sleeping in a bed under roof
-Lodging $$;lodging_money;Orange person sleeping in a bed under roof
 Lodging $;lodging_money;Orange person sleeping in a bed under roof
-Shop;shop;Green supermarket trolley
-Shops;shop;Green supermarket trolley
-Shop ?;shop_maybe;Yellow supermarket trolley
-Bus;bus;Green bus
-Transport;bus;Green bus
-Bus ?;bus_maybe;Yellow bus
-Food;food;brown bun with green apple
-Food ?;food_maybe;brown bun with yellow apple
+Lodging $$;lodging_money;Orange person sleeping in a bed under roof
+Lodging $$$;lodging_money;Orange person sleeping in a bed under roof
 Park Ranger;park_ranger;Green park ranger
 Park Ranger ?;park_ranger_maybe;Yellow park ranger
-Danger;danger;Green skull over white bones
-Border Control CL;border_control;Hand holding a green passport
-Border Control AR;border_control;Hand holding a green passport
-Border Control AR/CL;border_control;Hand holding a green passport
-Border;border_fence;Fence with barbed wire
-Border AR/CL;border_fence;Fence with barbed wire
-Road End;road_end;Green dead end sign
+Pass;pass;Green way going into mountains
+Pass ?;pass_maybe;Yellow way going into mountains
 Police;police;Green police car
-Gendarmeria;police;Green police car
 Police ?;police_maybe;Yellow police car
-Fence;fence;Green fence
-Emergency Exit;emergency_exit;Green person with red ged running with and arrow into green door˚
-Fords Start/End;fords;Ford icon with in and out subicons
-Fords End;fords;Ford icon with in and out subicons
-Fords Start;fords;Ford icon with in and out subicons
+Port;port;Green ship under crane
+Port ?;port_maybe;Yellow ship under crane
+Puesto;puesto; Green simple house drawing
+Puesto ?;puesto_maybe; Yellow simple house drawing
+Puesto Without Water;puesto_no_water;Red simple house drawing
+Rapid;rapid;Green waterfall
+Rapids End;rapids_end;Green waterfall with red triangle and a vertical bar
+Rapids Start;rapids_start;Green waterfall with green triangle
+Refuge;refuge;Backpacker under shelter, green background
+Refuge ?;refuge_maybe;Backpacker under shelter, yellowbackground
+Refuge Without Water;refuge_no_water;Backpacker under shelter, red background
+River;lake;Green lake
+River In;river_in;Green river with a green arrow pointing to a door
+River In ?;river_in_maybe;Yellow river with a green arrow pointing to a door
+River Out;river_out;Green river with a red arrow pointing from a door
+River/Fjord;lake;Green lake
+River/Lake;lake;Green lake
+River/River;lake;Green lake
+Road End;road_end;Green dead end sign
+Settlement;settlement; Three green houses
+Settler;settler;Green farmer
+Settler ?;settler_maybe;Yellow farmer
+Shop;shop;Green supermarket trolley
+Shop ?;shop_maybe;Yellow supermarket trolley
+Shops;shop;Green supermarket trolley
+Summit;summit;Flag on a green mountain
+Supply Point;suply_point;Colourful cornucopia
+Trail;trail;Green map of trail
+Trail ?;trail_maybe;Yellow map of trail
+Trailhead;trail;Green map of trail
+Trailhead ?;trail_maybe;Yellow map of trail
+Transport;bus;Green bus
+Viewpoint;viewpoint;Binoculars
+Water;water;Green droplet
+Water ?;water_maybe;Yellow droplet
+X;crossroad;Green Y-shaped crossroad
+Zipline;zipline;A green person attached to a rope from below with a a harness
+Zipline ?;zipline;A yellow person attached to a rope from below with a a harness
