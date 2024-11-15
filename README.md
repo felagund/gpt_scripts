@@ -55,7 +55,7 @@ options:
 
 # connect_tracks.py #
 
-It works on the GPT master KMZ file. It mainly connects the endpoint so there are not gaps between tracks, which should make routing easier and it also looks prettier. It also divides tracks that meet another option variant and are not broken into smaller segments. To rename them with proper km info, you need to run https://github.com/dave/gpt/ afterwards. It expects a `GPT Master.kmz`in the working directory but its location can be also specified.
+It works on the GPT master KMZ file. For the file to be then usable by GPT.exe, the resulting file needs to be opened once in Google Earth and saved. It mainly connects the endpoint so there are not gaps between tracks, which should make routing easier and it also looks prettier. It also divides tracks that meet another option variant and are not broken into smaller segments. To rename them with proper km info, you need to run https://github.com/dave/gpt/ afterwards. It expects a `GPT Master.kmz`in the working directory but its location can be also specified.
 
 ### Usage
 ```
