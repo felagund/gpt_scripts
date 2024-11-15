@@ -51,7 +51,8 @@ def get_groups(section_groups_filename):
     for group in group_lines:
         letter = group[0]
         rang = re.findall('GPT(..)', group)
-        groups.append((int(rang[0]),int(rang[1]),group,make_root(),make_root(),letter))
+        # three xml files are for all tracks, all waypints and hiking tracks only respectively
+        groups.append((int(rang[0]),int(rang[1]),group,make_root(),make_root(),make_root(),letter))
     return groups
 
 def open_file(filename,error_message):
@@ -78,6 +79,12 @@ def open_config_file(filename,error_message):
         else:
             lines.append(line)
     return lines 
+
+def is_hiking_only(code):
+    if ("RR-" in code) or ("OH-" in code):
+        return True
+    else:
+        return False
 
 def gpx_2_str(gpx):
         return etree.tostring(gpx, encoding=str)
@@ -296,13 +303,14 @@ except ValueError:
 # Open tracks file
 print("Reading and processing tracks")
 all_tracks_file = open_file(tracks_source_filename,"Missing or wrong all-track file, run script with --help to see how to specify it. Exiting now.")
-g = etree.parse(next(all_tracks_file)).getroot()
-
+all_tracks = etree.parse(next(all_tracks_file)).getroot()
+hiking_only_tracks = make_root()
+sections_hiking_only = {}
 # Parse the file, add style, make copies by section and groups
 styles_for_codes = {}
 sections = {}
 groups = get_groups(args.section_groups)
-for track in g:
+for track in all_tracks:
     code = track[0].text.split(" ")[0]
     if code not in styles_for_codes.keys():
         styles_for_codes[code] = make_style(code,args.locus_style)
@@ -310,11 +318,25 @@ for track in g:
     section = get_section(track[0].text)[0]
     if section not in sections.keys():
         sections[section] = make_root()
+        if "P" not in section:
+            sections_hiking_only[section] = make_root()
     sections[section].insert(0,copy.deepcopy(track))
+    if is_hiking_only(code):
+        hiking_only_tracks.append(copy.deepcopy(track))
+        # Some hiking tracks are confusingly in packrafting sections only
+        try:
+            sections_hiking_only[section].append(copy.deepcopy(track))
+        except KeyError:
+            sections_hiking_only[section] = make_root()
+            sections_hiking_only[section].append(copy.deepcopy(track))
+            #print(track[0].text, " is marked as hiking only but is in packrafting section")
     num = int(section[:2])
     for group in groups:
         if num in range(group[0],group[1]+1):
             group[3].insert(0,copy.deepcopy(track))
+            if is_hiking_only(code):
+                group[5].insert(0,copy.deepcopy(track))
+
 
 print("Reading and processing waypoints")
 # Read icon mapping
@@ -428,31 +450,44 @@ except FileExistsError:
 
 print("    Writing combined files")
 combined_folder = output_dir / "Combined Tracks and Waypoints"
-tracks_output_filename = combined_folder / ("All tracks (" + datestamp + ").gpx")
+tracks_output_filename = combined_folder / ("All hiking and packrafting tracks (" + datestamp + ").gpx")
+hiking_only_tracks_output_filename = combined_folder / ("All hiking tracks (" + datestamp + ").gpx")
 waypoints_output_filename = combined_folder / ("All waypoints (" + datestamp + ").gpx")
 os.makedirs(combined_folder)
-tracks_output_filename.write_text(gpx_2_str(g))
+tracks_output_filename.write_text(gpx_2_str(all_tracks))
+hiking_only_tracks_output_filename.write_text(gpx_2_str(hiking_only_tracks))
 waypoints_output_filename.write_text(gpx_2_str(new_w))
 
 print("    Writing files by section")
-section_track_folder = output_dir / "Tracks by Section/"
+section_track_folder = output_dir / "Tracks by Section - Both Packrafting and Hiking/"
+section_hiking_only_track_folder = output_dir / "Tracks by Section - Only Hiking/"
 section_waypoint_folder = output_dir / "Waypoints by Section/"
 os.makedirs(section_track_folder)
+os.makedirs(section_hiking_only_track_folder)
 os.makedirs(section_waypoint_folder)
 for section in sections.keys():
     section_track_output_filename = section_track_folder / (section + ".gpx")
     section_track_output_filename.write_text(gpx_2_str(sections[section]))
+for section in sections_hiking_only.keys():
+    section_hiking_only_track_output_filename = section_hiking_only_track_folder / (section + ".gpx")
+    section_hiking_only_track_output_filename.write_text(gpx_2_str(sections_hiking_only[section]))
+
 for section in sections_poi.keys():
     section_waypoint_output_filename = section_waypoint_folder / (section + ".gpx")
     section_waypoint_output_filename.write_text(gpx_2_str(sections_poi[section]))
         
 print("    Writing files by group")
-group_track_folder = output_dir / "Tracks by Group/"
+group_track_folder = output_dir / "Tracks by Group - Both Packrafting and Hiking/"
+group_hiking_only_track_folder = output_dir / "Tracks by Group - Only Hiking/"
 group_waypoint_folder = output_dir / "Waypoints by Group/"
 os.makedirs(group_track_folder)
 os.makedirs(group_waypoint_folder)
+os.makedirs(group_hiking_only_track_folder)
 for group in groups:
     group_track_output_filename = group_track_folder / (group[2] + ".gpx")
     group_waypoint_output_filename = group_waypoint_folder / (group[2] + ".gpx")
+    if len(group[5]) > 1:
+        group_hiking_only_track_output_filename = group_hiking_only_track_folder / (group[2] + ".gpx")
+        group_hiking_only_track_output_filename.write_text(gpx_2_str(group[5]))
     group_track_output_filename.write_text(gpx_2_str(group[3]))
     group_waypoint_output_filename.write_text(gpx_2_str(group[4]))
