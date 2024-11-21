@@ -15,7 +15,7 @@ Bridge;bridge;Green bridge
 Bridge ?;bridge_maybe;Green bridge
 Building;building;Green 3D building
 Buildings;building;Green 3D building
-Building Abandoned;building_bandoned;Grey 3D building
+Building Abandoned;building_abandoned;Grey 3D building
 Bus;bus;Green bus
 Bus ?;bus_maybe;Yellow bus
 Camp;camp;Green tent
@@ -27,8 +27,8 @@ Danger;danger;Green skull over white bones
 Emergency Camp;camp_emergency;Purple tent
 Emergency Exit;emergency_exit;Green person running into green door and red arrow
 Fence;fence;Green fence
-Ferry;ferry,Green ferry;
-Ferry ?;ferry_maybe,Yellow ferry;
+Ferry;ferry;Green ferry;
+Ferry ?;ferry_maybe;Yellow ferry;
 Fjord;lake;Green lake
 Fjord/River;lake;Green lake
 Food;food;brown bun with green apple
@@ -66,8 +66,8 @@ Police ?;police_maybe;Yellow police car
 Port;port;Green ship under crane
 Port ?;port_maybe;Yellow ship under crane
 Puesto;puesto; Green simple house drawing
-Puesto ?;puesto_maybe; Yellow simple house drawing
-Puesto Abandoned;puesto_abandoned Grey simple house drawing
+Puesto ?;puesto_maybe;Yellow simple house drawing
+Puesto Abandoned;puesto_abandoned;Grey simple house drawing
 Puesto Without Water;puesto_no_water;Red simple house drawing
 Rapid;rapid;Green waterfall
 Rapids End;rapids_end;Green waterfall with red triangle and a vertical bar
@@ -92,7 +92,7 @@ Shop;shop;Green supermarket trolley
 Shop ?;shop_maybe;Yellow supermarket trolley
 Shops;shop;Green supermarket trolley
 Summit;summit;Flag on a green mountain
-Supply Point;suply_point;Colourful cornucopia
+Supply Point;supply_point;Colourful cornucopia
 Trail;trail;Green map of trail
 Trail ?;trail_maybe;Yellow map of trail
 Trailhead;trail;Green map of trail
@@ -103,4 +103,4 @@ Water;water;Green droplet
 Water ?;water_maybe;Yellow droplet
 X;crossroad;Green Y-shaped crossroad
 Zipline;zipline;A green person attached to a rope from below with a a harness
-Zipline ?;zipline;A yellow person attached to a rope from below with a a harness
+Zipline ?;zipline_maybe;A yellow person attached to a rope from below with a a harness

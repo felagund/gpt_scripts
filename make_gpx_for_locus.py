@@ -95,7 +95,9 @@ def make_style(code,filename):
     for line in style_lines:
         split = line.split("=")
         style_dict[split[0]]=split[1]
+    regular_packraft_width = style_dict["regular_packraft_width"]
     regular_width = style_dict["regular_width"]
+    optional_packraft_width = style_dict["optional_packraft_width"]
     optional_width = style_dict["optional_width"]
     pr_color = style_dict["pr_color"]
     mr_color = style_dict["mr_color"]
@@ -105,6 +107,7 @@ def make_style(code,filename):
     fy_color = style_dict["fy_color"]
     water_color = style_dict["water_color"]
     out_color = style_dict["out_color"]
+    exp_color = style_dict["exp_color"]
     symbol_mix = style_dict["symbol_mix"]
     symbol_exp = style_dict["symbol_exp"]
     symbol_one_way = style_dict["symbol_one_way"]
@@ -118,16 +121,15 @@ def make_style(code,filename):
     elif "RH" in code:
         width = regular_width
     elif "RP" in code:
-        width = regular_width
-    else:
-        width = optional_width
-
-    if "RP" in code:
-        outline_color = out_color
+        width = regular_packraft_width
     elif "OP" in code:
+        width = optional_packraft_width
+    elif "OH" in code:
+        width = optional_width
+    else:
+        print("Style is not regular or optional hiking or packrafting: ",code) 
+    if ("RP" in code) or ("OP" in code):
         outline_color = out_color
-
-
     if "EXP" in code:
         if code[-1] == "1":
             one_way = symbol_one_way_exp
@@ -209,6 +211,8 @@ def make_style(code,filename):
             second_color = water_color
         else:
             print("Unkwnown second trail code when making styles: " + trail_second)
+    if "EXP" in code:
+        second_color = exp_color
     style="""
 <extensions>
 <line xmlns="http://www.topografix.com/GPX/gpx_style/0/2" xmlns:locus="http://www.locusmap.eu">
@@ -390,9 +394,12 @@ for wp in waypoint_files[0]:
             points.append(w_tup)
 
 #For important and ressuply imformation, we ignore comma in names
+o = True
 for wp in waypoint_files[1]:
+    wp.find("name").text = "Important: " + wp.find("name").text
     points.append(WaypointTuple("Important",get_section(wp.find("name").text),wp))
 for wp in waypoint_files[2]:
+    wp.find("name").text = "Resupply: " + wp.find("name").text
     points.append(WaypointTuple("Supply Point",get_section(wp.find("name").text),wp))
 
 # apply Locus styling to waypoints

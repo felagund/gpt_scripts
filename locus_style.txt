@@ -1,25 +1,31 @@
 # This is released into public domain.
 # Specification of locus style, can be tweaked
-# Width of regular route (RR, RH or RP) tracks
-regular_width=6.0
-# Width of optional (OH or OP) tracks
-optional_width=3.0
+# Width of regular hiking route (RR, RH) tracks
+regular_width=10.0
+# Width of regular packrafting route (RP) tracks
+regular_packraft_width=7.0
+# Width of optional hiking (OH) tracks
+optional_width=5.0
+# Width of optional packrafting (OH) tracks
+optional_packraft_width=3.0
 # Color of primary roads (PR)
-pr_color=#B3D700D7
+pr_color=#FFD700D7
 # Color of minor roads (MR)
-mr_color=#B3D70000
+mr_color=#FFD70000
 # Color of trails (TL)
-tl_color=#B30000FF
+tl_color=#FF0000FF
 # Color of cross country (CC)
-cc_color=#B300FF00
+cc_color=#FF00FF00
 # Color of bush bashing (BB)
-bb_color=#B3FFFF00
+bb_color=#FFFFFF00
 # Color of ferry (FY)
-fy_color=#B3FFFFFF
+fy_color=#FFFFFFFF
 # Color of routes on water, ie. on fjords, rivers and lakes (FJ, RI, LK)
-water_color=#FFA500
+water_color=#FFFFA500
 # Colour of outline marking packrafting tracks
 out_color=#FF000000
+# Colour of symbol marking exploratory tracks
+exp_color=#FF00D7D7
 # Symbol for mixed tracks (that have "&" in them, i.e. TL&CC, for trails with three values like TL&CC&BB, only first two are taken into account)
 symbol_mix=DASHED_3
 # Symbol for exploratino routes (EXP)
