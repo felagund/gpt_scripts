@@ -22,7 +22,7 @@ Camp;camp;Green tent
 Camp ?;camp_maybe_water;Yellow tent
 Camp $;camp_money;Orange tent
 Camp Without Water;camp_no_water;Red tent
-NO Camp;camp_no,Grey tent with a red no sign
+NO Camp;camp_no;Grey tent with a red no sign
 Danger;danger;Green skull over white bones
 Emergency Camp;camp_emergency;Purple tent
 Emergency Exit;emergency_exit;Green person running into green door and red arrow
