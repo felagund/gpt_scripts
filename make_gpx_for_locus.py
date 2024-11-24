@@ -41,7 +41,15 @@ def get_section(name):
     start = name.find("{") + 1
     end = name.find("}")
     s = name[start:end].split("-")[0]
-    return [x.strip() for x in s.split(",")]
+    # resupply and important imformation waypoints can be assigned to multiple sections with {02, 03}
+    sections_list = []
+    for x in s.split(","):
+        x = x.strip()
+        # Some sections are divided into north- and south-bound like 22N and 22s or 29PN and 29PS, disregard
+        x = x.strip("S")
+        x = x.strip("N")
+        sections_list.append(x)
+    return sections_list 
 
 def get_groups(section_groups_filename):
     group_lines = open_config_file(
