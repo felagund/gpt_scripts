@@ -28,7 +28,7 @@ out_color=#FF000000
 exp_color=#FF00D7D7
 # Symbol for mixed tracks (that have "&" in them, i.e. TL&CC, for trails with three values like TL&CC&BB, only first two are taken into account)
 symbol_mix=DASHED_3
-# Symbol for exploratino routes (EXP)
+# Symbol for exploration routes (EXP)
 symbol_exp=CROSS_1
 # Symbol for one way packrafting and ferry routes
 symbol_one_way=ARROW_1
