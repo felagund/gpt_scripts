@@ -22,6 +22,8 @@ These are the icons:
 
 ![Loucs Map icons](https://github.com/felagund/gpt_scripts/blob/master/Screenshots/alll_icons.png?raw=true)
 
+Meaning of the icons and style legend, as well as tips for setting up Locus Map for the GPT can be found in the GPT Manual that is forthcoming as of November 2024.
+
 ### Usage ###
 ```
 make_gpx_for_locus.py [-h] [-d DIRECTORY] [-t TRACKS] [-w WAYPOINTS] [-ls LOCUS_STYLE] [-ic ICON_MAPPING] [-sg SECTION_GROUPS] [-o OUTPUT]
