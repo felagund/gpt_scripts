@@ -3,7 +3,7 @@
 
 # on windows, build with pyinstaller --one-file connect_tracks.py
 
-from IPython import embed
+#from IPython import embed
 from lxml import etree
 import io
 import os

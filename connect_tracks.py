@@ -2,7 +2,7 @@
 # This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 # on windows, build with pyinstaller --one-file connect_tracks.py
 
-from IPython import embed
+#from IPython import embed
 # put embed() when one needs to embed
 import itertools
 #import xml.etree.ElementTree as etree
