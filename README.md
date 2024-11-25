@@ -79,6 +79,32 @@ options:
   -l2 SECOND_PASS_LIMIT, --second_pass_limit SECOND_PASS_LIMIT
                         Sets maximum distance under which points will be moved in second pass (default 10 m)
 ```
+# Build on Windows guest machine in Virtualbox #
 
-### License ###
+1. Install python in windows (download from python.org and run executable). 
+
+2. It must be added to PATH (WTF):
+
+    a. look for "system variable" in start menu
+
+    b. add the _directory_ to path and move it up (for 3.13, it was:
+
+         i. `C:\Users\virtual\AppData\Local\Programs\Python\Python313\`
+
+         ii. `C:\Users\virtual\AppData\Local\Programs\Python\Python313\Scripts\` (reboot needed, WTF)
+
+4. Working in directory on the Desktop, not sure how to get to the directory shared from my host machine.
+
+5. install dependencies:
+`pip install geopy lxml`
+
+4. run:
+   
+    a. `pyinstaller --onefile make_gpx_for_locus.py`
+   
+    b. `pyinstaller --onefile --hidden-import=lxml,geopy oconnect_tracks.py`
+
+6. move the exe file from the dist directory
+
+# License #
 GPL 3, for all.
