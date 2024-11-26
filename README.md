@@ -32,7 +32,7 @@ make_gpx_for_locus.py [-h] [-d DIRECTORY] [-t TRACKS] [-w WAYPOINTS] [-ls LOCUS_
 options:
   -h, --help            show this help message and exit
   -d DIRECTORY, --directory DIRECTORY
-                        Default folder with tracks and waypoinrtsis, defaults to "GPT Track Files YEAR/GPX Files (For Smartphones and Basecamp)/ placed in
+                        Default folder with tracks and waypoints, defaults to "GPT Track Files YEAR/GPX Files (For Smartphones and Basecamp)/ placed in
                         the working directory. The folder is assumed to contain folders "Combined Tracks" and "Waypoints".
   -t TRACKS, --tracks TRACKS
                         Input file with all tracks, defaults to "GPT Track Files YEAR/GPX Files (For Smartphones and Basecamp)/Combined Tracks/All

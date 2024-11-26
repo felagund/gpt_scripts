@@ -256,7 +256,7 @@ def make_style(code,filename):
 default_folder = "GPT Track Files YEAR/GPX Files (For Smartphones and Basecamp)/"
 parser = argparse.ArgumentParser()
 parser.add_argument("-d","--directory",
-help='Default folder with tracks and waypoinrtsis, defaults to "' + default_folder + ' placed in the working directory. The folder is assumed to contain folders "Combined Tracks" and "Waypoints".')
+help='Default folder with tracks and waypoints, defaults to "' + default_folder + ' placed in the working directory. The folder is assumed to contain folders "Combined Tracks" and "Waypoints".')
 parser.add_argument("-t","--tracks",
 help='Input file with all tracks, defaults to "' + default_folder + 'Combined Tracks/All Optional and Regular Tracks (SOME_DATE).gpx" placed in the working directory')
 
