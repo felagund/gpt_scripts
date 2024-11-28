@@ -16,7 +16,7 @@ It transforms the general GPT track files for Smartphones into map with custom-s
 See the files to see how to change them to change appearance. The zip files with the icons `gpt_icons.zip` needs to be put  to `Android/data/menion.android.locus/files/Locus/icons/. This needs to be done from a computer (since Android 11, app directories are not accessible from a phone). More info about custom icons for Locus here: https://docs.locusmap.app/doku.php?id=manual:advanced:customization:icons.
 
 This is what it looks like for GPT37 just south of Villa O'Higgins:
-![Locus Map style](https://github.com/felagund/gpt_scripts/blob/master/Screenshots/gpt37.jpeg?raw=true)
+![Locus Map style](https://github.com/felagund/gpt_scripts/blob/master/Screenshots/gpt37.png?raw=true)
 
 These are the icons:
 
