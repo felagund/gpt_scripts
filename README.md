@@ -1,9 +1,13 @@
 # About GPT #
 See https://www.wikiexplora.com/GPT to know more about Greater Patagonian Trail.
 # Installation #
-Simply download the scripts and run them, for example:
+Simply [download the scripts](https://github.com/felagund/gpt_scripts/releases/) and run them, for example:
 ```
-python3 make_gpx_for_locus.p
+python3 make_gpx_for_locus.py
+```
+or under Windows:
+```
+make_gpx_for_locus
 ```
 
 # make_gpx_for_locus.py #
