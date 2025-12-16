@@ -89,7 +89,7 @@ def open_config_file(filename,error_message):
     return lines 
 
 def is_hiking_only(code):
-    if ("RR-" in code) or ("OH-" in code):
+    if ("RR-" in code) or ("OH-" in code) or ("RH-" in code):
         return True
     else:
         return False
@@ -294,9 +294,10 @@ else:
         data_source_folder = Path(args.directory)
     else:
         d = next(Path(".").glob("GPT Track Files *"))
-        data_source_folder = d / "GPX Files (For Smartphones and Basecamp)/"
+        data_source_folder = d / "GPX Files (For Smartphone Apps)/"
     tracks_source_folder = data_source_folder / "Combined Tracks"
     tracks_source_filename = next(tracks_source_folder.glob("All Optional and Regular Tracks*.gpx"))
+
 # Get waypoint folder to read if not specified via command line
 if args.waypoints:
     waypoint_folder = args.waypoints
@@ -367,7 +368,7 @@ for icon in icons:
 
 # Open waypoints files
 waypoint_files =[]
-for x in "All Other Waypoints","Important Inf??mation","Resupply Locations":
+for x in "Waypoints","Important Inf??mation","Resupply Locations":
     try:
         filename = next(waypoints_source_folder.glob(x + "*.gpx"))
     except StopIteration:
