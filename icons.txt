@@ -8,6 +8,8 @@ Airfield Abandoned;airplane_abandoned;Grey airplane
 Airport;airplane;Green airplane
 Border;border_fence;Fence with barbed wire
 Border AR/CL;border_fence;Fence with barbed wire
+Border CL/AR;border_fence;Fence with barbed wire
+BorderAR/CL;border_fence;Fence with barbed wire
 Border Control AR;border_control;Hand holding a green passport
 Border Control AR/CL;border_control;Hand holding a green passport
 Border Control CL;border_control;Hand holding a green passport
@@ -22,6 +24,10 @@ Camp;camp;Green tent
 Camp ?;camp_maybe_water;Yellow tent
 Camp $;camp_money;Orange tent
 Camp Without Water;camp_no_water;Red tent
+Camp no Water;camp_no_water;Red tent
+Camp No Water;camp_no_water;Red tent
+Camp no Water ?;camp_maybe_no_water;Red tent
+Camp Without Water ?;camp_maybe_no_water;Red tent
 NO Camp;camp_no;Grey tent with a red no sign
 Danger;danger;Green skull over white bones
 Emergency Camp;camp_emergency;Purple tent
@@ -43,6 +49,7 @@ Fords Start/End;fords;Ford icon with in and out subicons
 Gate;gate;Green gate
 Gate ?;gate_maybe;Yellow gate
 Gendarmeria;police;Green police car
+Glacier;glacier;Blue glacier
 Hot Spring;hot_spring;Green hotspring
 Hot Spring ?;hot_spring_maybe;Red hotspring
 Hot Spring $;hot_spring_money;Orange hotspring
@@ -53,11 +60,13 @@ Lake/River;lake;Green lake
 Landmark;landmark;Green obelisk
 Landmark Abandoned;landmark_abandoned;Grey obelisk
 Lodging;lodging;Green person sleeping in a bed under roof
+Accomodation;lodging;Green person sleeping in a bed under roof
 Lodging ?;lodging_maybe;Yellow person sleeping in a bed under roof
 Lodging $;lodging_money;Orange person sleeping in a bed under roof
 Lodging $$;lodging_money;Orange person sleeping in a bed under roof
 Lodging $$$;lodging_money;Orange person sleeping in a bed under roof
 Park Ranger;park_ranger;Green park ranger
+Conaf;park_ranger;Green park ranger
 Park Ranger ?;park_ranger_maybe;Yellow park ranger
 Pass;pass;Green way going into mountains
 Pass ?;pass_maybe;Yellow way going into mountains
@@ -70,6 +79,7 @@ Puesto ?;puesto_maybe;Yellow simple house drawing
 Puesto Abandoned;puesto_abandoned;Grey simple house drawing
 Puesto Without Water;puesto_no_water;Red simple house drawing
 Rapid;rapid;Green waterfall
+Rapids;rapid;Green waterfall
 Rapids End;rapids_end;Green waterfall with red triangle and a vertical bar
 Rapids Start;rapids_start;Green waterfall with green triangle
 Refuge;refuge;Backpacker under shelter, green background

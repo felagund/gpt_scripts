@@ -2,7 +2,7 @@
 # Specifies groupings of sections, can be modified
 # Anything before the first " GPT" is used as name of the file for the groupings
 # Range is specified by the two gpt strings, so to have a group from GPT01 to GPT1O, one would do
-# Z - Custom Group gpt01 - GPT10
+# Z - Custom Group GPT01 - GPT10
 A - Precordillera GPT01 - GPT04
 B - Arrieros GPT05 - GPT09
 C - Pehuenche GPT10 - GPT16
@@ -17,5 +17,5 @@ K - Magallanes GPT47 - GPT50
 L - Tierra del Fuego GPT60 - GPT69
 M - Sector Yelcho GPT70 - GPT75
 N - Fiordos Norte GPT76 - GPT78
-O - Campo de Hielo Norte GPT80 - GPT83
+O - Campo de Hielo Norte GPT80 - GPT82
 P - Fjordos Sur GPT90 - GPT92
