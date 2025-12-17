@@ -8,7 +8,7 @@ B - Arrieros GPT05 - GPT09
 C - Pehuenche GPT10 - GPT16
 D - Lagos Chilenos GPT17 - GPT22
 E - Lagos Argentinos GPT23 - GPT26
-F - Sector Palena GPT27 - GPT30
+F - Sector Palena GPT27 - GPT28
 G - Aysen Norte  GPT29 - GPT31
 H - Aysen Sur GPT32 - GPT37
 I - Campo de Hielo Sur 1 GPT38 - GPT40
