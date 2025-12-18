@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   fill="#000000"
+   width="800px"
+   height="800px"
+   viewBox="0 0 512 512"
+   enable-background="new 0 0 512 512"
+   id="camping"
+   version="1.1"
+   xml:space="preserve"
+   sodipodi:docname="camp_maybe_no_water.svg"
+   inkscape:export-filename="../PNG/camp_maybe_red.png"
+   inkscape:export-xdpi="11.52"
+   inkscape:export-ydpi="11.52"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"><defs
+   id="defs19" /><sodipodi:namedview
+   id="namedview17"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   showgrid="false"
+   inkscape:zoom="0.57359374"
+   inkscape:cx="-1079.161"
+   inkscape:cy="-9.5886681"
+   inkscape:window-width="3840"
+   inkscape:window-height="2120"
+   inkscape:window-x="2183"
+   inkscape:window-y="40"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="g14"
+   inkscape:showpageshadow="2"
+   inkscape:deskcolor="#d1d1d1" />
+
+<g
+   id="g14">
+
+<path
+   d="m 494.422,331.832 c -2.987,-2.231 -7.217,-1.619 -9.447,1.368 l -19.854,26.587 -74.773,-133.291 c -0.734,-1.31 -1.884,-2.336 -3.267,-2.919 l -190.735,-80.309 17.215,-28.396 c 1.933,-3.188 0.915,-7.338 -2.272,-9.271 -3.186,-1.933 -7.338,-0.915 -9.271,2.272 l -14.898,24.573 -11.989,-24.083 c -1.66,-3.336 -5.713,-4.697 -9.051,-3.033 -3.337,1.661 -4.696,5.714 -3.033,9.051 l 15.793,31.724 -1.536,2.534 -42.659,69.323 L 47.146,360.145 27.025,333.2 c -2.229,-2.986 -6.459,-3.601 -9.447,-1.368 -2.986,2.23 -3.6,6.46 -1.369,9.447 l 26.068,34.907 c 10e-4,0.001 0.002,0.001 0.002,0.002 0.227,0.304 0.483,0.578 0.755,0.836 l 0.003,0.003 c 0.145,0.138 0.29,0.272 0.444,0.396 0.144,0.115 0.297,0.215 0.449,0.316 0.083,0.057 0.163,0.117 0.248,0.169 0.001,0 0.001,0 0.001,10e-4 0.57,0.346 1.189,0.607 1.843,0.772 v 0.001 c 0.126,0.031 0.253,0.054 0.38,0.077 0.419,0.081 0.846,0.138 1.283,0.138 h 42.206 177.049 37.667 159.707 c 0.011,0 0.021,-0.002 0.033,-0.002 0.022,-10e-4 0.045,-0.005 0.067,-0.005 0.346,-0.005 0.687,-0.042 1.022,-0.099 v 0 c 0.175,-0.029 0.349,-0.062 0.52,-0.104 h 10e-4 c 1.472,-0.37 2.784,-1.225 3.716,-2.442 v 0 c 0.016,-0.021 0.033,-0.038 0.049,-0.059 l 26.067,-34.907 c 2.232,-2.987 1.619,-7.216 -1.367,-9.447 z M 269.17,365.397 c -63.816,-47.975 -81.071,-131.612 -81.239,-132.455 -0.615,-3.119 -3.323,-5.387 -6.502,-5.441 -3.143,-0.071 -5.966,2.11 -6.691,5.207 -16.769,71.537 -76.254,123.579 -87.24,132.689 H 59.766 L 186.085,160.126 293.459,365.397 Z m 48.902,0 18.011,-24.118 c 2.23,-2.987 1.618,-7.217 -1.368,-9.447 -2.987,-2.231 -7.217,-1.619 -9.447,1.368 l -19.65,26.313 -104.374,-199.534 178.462,75.142 73.082,130.276 H 318.072 Z"
+   id="path2"
+   inkscape:export-filename="/home/drew/Desktop/camp_red.png"
+   inkscape:export-xdpi="11.52"
+   inkscape:export-ydpi="11.52"
+   sodipodi:nodetypes="cccccccccccccccccccccccccccccccscccsccssccsscccccccccccccccccccccc" />
+
+
+
+
+
+
+
+
+
+
+
+<path
+   style="fill:#ffd42a;stroke:#2c2825;stroke-width:10.904;stroke-linecap:round;fill-opacity:1"
+   d="m 291.66377,252.79685 c -6.47006,5.09729 -9.76335,13.64166 -14.69357,20.21008 -61.52388,98.47044 -121.87713,197.67013 -182.768183,296.5341 0.989597,3.18172 6.818553,1.04 9.553203,1.90803 11.0222,0.13639 22.14697,0.36944 33.1037,-0.0674 50.57397,-44.32123 94.19758,-98.07988 120.68917,-160.26733 7.08532,-16.03611 11.41179,-33.26446 16.99554,-49.70095 2.8953,-7.56806 15.34194,-7.71931 17.26574,0.7367 7.71728,22.59628 13.58033,45.90136 23.46362,67.74483 18.74506,43.4444 44.02838,84.73288 78.5046,117.50677 9.09591,8.51426 17.80411,18.68644 28.86237,24.19077 11.69107,-0.41678 23.72737,0.80837 35.25078,-0.79103 -6.52326,-15.5954 -15.75418,-30.65901 -23.29221,-46.04866 C 387.2089,434.1542 340.06792,343.32181 292.35049,252.95328 c -0.20369,-0.12771 -0.44923,-0.17684 -0.68672,-0.15647 z"
+   id="path3270"
+   transform="scale(0.64)" /><path
+   style="fill:#d40000;stroke:#2c2825;stroke-width:10.904;stroke-linecap:round"
+   d="m 315.96184,251.11266 c 1.25107,6.53334 6.45187,12.80692 9.10465,19.22583 50.39486,97.06934 101.24749,193.90313 151.90456,290.83806 4.86606,-1.81938 7.79451,-10.06326 11.94354,-14.20451 7.651,-9.54956 14.07545,-20.52819 22.87478,-28.95439 8.40409,-4.55942 18.6898,5.72866 13.52792,13.91689 -8.46551,12.90674 -18.95009,24.82661 -26.90369,37.83249 6.29846,2.58782 14.21861,0.73874 21.03399,1.54513 62.42518,0.51142 124.85385,0.18621 187.28051,0.28033 0.68519,-4.60692 -5.40043,-10.2584 -7.14875,-15.21067 -35.50282,-63.096 -70.65649,-126.4738 -106.3922,-189.38556 C 501.02036,328.32292 409.05969,289.14362 316.68333,250.98444 Z"
+   id="path3309"
+   transform="scale(0.64)" /></g>
+
+<metadata
+   id="metadata1417"><rdf:RDF><cc:License
+       rdf:about="http://creativecommons.org/publicdomain/zero/1.0/"><cc:permits
+         rdf:resource="http://creativecommons.org/ns#Reproduction" /><cc:permits
+         rdf:resource="http://creativecommons.org/ns#Distribution" /><cc:permits
+         rdf:resource="http://creativecommons.org/ns#DerivativeWorks" /></cc:License><cc:Work
+       rdf:about=""><cc:license
+         rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" /></cc:Work></rdf:RDF></metadata></svg>
