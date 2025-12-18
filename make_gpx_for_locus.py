@@ -389,7 +389,7 @@ pariahs = []
 more_wpts_in_one = []
 points = []
 
-# Process all other waypoint file
+# Process all other waypoints file
 for wp in waypoint_files[0]:
     name = wp.find("name").text.split("{")[0].strip()
     section = get_section(wp.find("name").text)
@@ -416,6 +416,11 @@ for wp in waypoint_files[1]:
 for wp in waypoint_files[2]:
     wp.find("name").text = "Resupply: " + wp.find("name").text
     points.append(WaypointTuple("Supply Point",get_section(wp.find("name").text),wp))
+# For section starts, we must get the appropriate section differently
+for wp in waypoint_files[3]:
+    section = wp.find("name").text.split(" ")[0][3:6]
+    wp.find("name").text = "Section Start: " + wp.find("name").text
+    points.append(WaypointTuple("Section Start",[section],wp))
 
 # apply Locus styling to waypoints
 sections_poi = {}

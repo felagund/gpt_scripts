@@ -94,6 +94,7 @@ River/Fjord;lake;Green lake
 River/Lake;lake;Green lake
 River/River;lake;Green lake
 Road End;road_end;Green dead end sign
+Section Start;section_start;Black and white race-starting flag
 Settlement;settlement; Three green houses
 Settler;settler;Green farmer
 Settler ?;settler_maybe;Yellow farmer
