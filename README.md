@@ -1,23 +1,23 @@
 # About GPT #
-See https://www.wikiexplora.com/GPT to know more about Greater Patagonian Trail.
+See https://www.wikiexplora.com/GPT to know more about the Greater Patagonian Trail.
 # Installation #
-Simply [download the scripts](https://github.com/felagund/gpt_scripts/releases/) and run them, for example:
+Simply [download the scripts](https://github.com/felagund/gpt_scripts/releases/), extract them if not on Windows and run them, for example:
 ```
 python3 make_gpx_for_locus.py
 ```
-or under Windows:
+or using Windows:
 ```
-make_gpx_for_locus
+make_gpx_for_locus*.exe
 ```
 
 # make_gpx_for_locus.py #
 
-It transforms the general GPT track files for Smartphones into map with custom-styled tracks amd icons for Locus Map Android application. By default, it needs to run in a directory that contains as subdirectory the unzipped track files from Jan Dudeck, but you can specify other filepaths. It needs three files for configuration:
+It transforms the general "GPX Files (For Smartphone Apps)" folder in the GPT track files as distributed by Jan Dudeck into GPX files tailored-made for the [Locus Map Android application](https://www.locusmap.app) with custom-styled tracks amd icons. By default, it needs to run in a directory that contains as subdirectory the unzipped track files from Jan Dudeck, but you can specify other filepaths. It uses three files for configuration:
 * `icons.txt`
 * `locus_style.txt`
 * `section_groups.txt`
   
-See the files to see how to change them to change appearance. The zip files with the icons `gpt_icons.zip` needs to be put  to `Android/data/menion.android.locus/files/Locus/icons/. This needs to be done from a computer (since Android 11, app directories are not accessible from a phone). More info about custom icons for Locus here: https://docs.locusmap.app/doku.php?id=manual:advanced:customization:icons.
+See the files to see how to change them to change appearance of tracks or icons. The zip file with the icons `gpt_icons.zip` needs to be put to `Android/data/menion.android.locus/files/Locus/icons/. This needs to be done from a computer (since Android 11, app directories are not accessible from a phone). More info about custom icons for Locus here: https://docs.locusmap.app/doku.php?id=manual:advanced:customization:icons.
 
 This is what it looks like for GPT37 just south of Villa O'Higgins:
 ![Locus Map style](https://github.com/felagund/gpt_scripts/blob/master/Screenshots/gpt37.jpg?raw=true)
@@ -26,42 +26,35 @@ These are the icons:
 
 ![Loucs Map icons](https://github.com/felagund/gpt_scripts/blob/master/Screenshots/alll_icons.png?raw=true)
 
-Meaning of the icons and style legend, as well as tips for setting up Locus Map for the GPT can be found in the GPT Manual that is forthcoming as of November 2024.
+Meaning of the icons and style legend, as well as tips for setting up Locus Map for the GPT can be found in the next version of the GPT Manual that is forthcoming as of December 2025.
 
 ### Usage ###
 ```
-make_gpx_for_locus.py [-h] [-d DIRECTORY] [-t TRACKS] [-w WAYPOINTS] [-ls LOCUS_STYLE] [-ic ICON_MAPPING] [-sg SECTION_GROUPS] [-o OUTPUT]
-                             [--delete_previous_custom_output]
+usage: make_gpx_for_locus.py [-h] [-d DIRECTORY] [-t TRACKS] [-w WAYPOINTS] [-ls LOCUS_STYLE] [-ic ICON_MAPPING] [-sg SECTION_GROUPS] [-o OUTPUT] [--delete_previous_custom_output]
 
 options:
   -h, --help            show this help message and exit
-  -d DIRECTORY, --directory DIRECTORY
-                        Default folder with tracks and waypoints, defaults to "GPT Track Files YEAR/GPX Files (For Smartphones and Basecamp)/ placed in
-                        the working directory. The folder is assumed to contain folders "Combined Tracks" and "Waypoints".
-  -t TRACKS, --tracks TRACKS
-                        Input file with all tracks, defaults to "GPT Track Files YEAR/GPX Files (For Smartphones and Basecamp)/Combined Tracks/All
-                        Optional and Regular Tracks (SOME_DATE).gpx" placed in the working directory
-  -w WAYPOINTS, --waypoints WAYPOINTS
-                        Input filder with all waypoints, defaults to "GPT Track Files YEAR/GPX Files (For Smartphones and Basecamp)/Waypoints/" placed in
-                        the working directory; it needs to contain the following files: "All Other Waypoints (SOME_DATE).gpx", "Important information
-                        (SOME_DATE).gpx" and "Ressuply Locations (SOME_DATE).gpx" (Starting points are not processed)
-  -ls LOCUS_STYLE, --locus_style LOCUS_STYLE
-                        Input Locus style file, defaults to "locus_style.txt" placed in the working directory
-  -ic ICON_MAPPING, --icon_mapping ICON_MAPPING
-                        Input file mapping icons to waypoints, defaults to "icons.txt" placed in the working directory
-  -sg SECTION_GROUPS, --section_groups SECTION_GROUPS
-                        Input section groups, defaults to "section_groups.txt" placed in the working directory
-  -o OUTPUT, --output OUTPUT
-                        Output directory, defaults to "GPX Files (For Locus Map app)" placed in the working directory; which it creates anew with every
-                        run, when different custom output directory is specified, no clearing takes place unless explicitly asked
+  -d, --directory DIRECTORY
+                        Sets default folder with tracks and waypoints. It defaults to "GPT Track Files YEAR/GPX Files (For Smartphone Apps)/ placed in the working directory. The folder is assumed to contain folders "Combined Tracks" and "Waypoints".
+  -t, --tracks TRACKS   Sets an input file with all the tracks. It defaults to "GPT Track Files YEAR/GPX Files (For Smartphone Apps)/Combined Tracks/All Optional and Regular Tracks (SOME_DATE).gpx" placed in the working directory.
+  -w, --waypoints WAYPOINTS
+                        Sets the input folder with all the waypoints. It defaults to "GPT Track Files YEAR/GPX Files (For Smartphone Apps)/Waypoints/" placed in the working directory. It must contain the following files: "All Other Waypoints (SOME_DATE).gpx", "Important information
+                        (SOME_DATE).gpx", "Ressuply Locations (SOME_DATE).gpx" and "Section Start and End Points (SOME_DATE)".
+  -ls, --locus_style LOCUS_STYLE
+                        Sets the input Locus style file. It defaults to "locus_style.txt" placed in the working directory.
+  -ic, --icon_mapping ICON_MAPPING
+                        Sets the input file that maps icons to waypoints. It defaults to "icons.txt" placed in the working directory.
+  -sg, --section_groups SECTION_GROUPS
+                        Sets input section groups. It defaults to "section_groups.txt" placed in the working directory.
+  -o, --output OUTPUT   Sets output directory. It defaults to "GPX Files (For Locus Map app)" placed in the working directory. It creates this directory anew with every run if present and the default is used. When a different custom output directory is specified, it does not get deleted
+                        unless specifically instructed (see the next option).
   --delete_previous_custom_output
-                        If custom output directory specified, it will get deleted if this option is used
-
+                        If a custom output directory is specified (see above), it will be first deleted if it previously exists.
 ```
 
 # connect_tracks.py #
 
-It works on the GPT master KMZ file. For the file to be then usable by GPT.exe, the resulting file needs to be opened once in Google Earth and saved. It mainly connects the endpoint so there are not gaps between tracks, which should make routing easier and it also looks prettier. It also divides tracks that meet another option variant and are not broken into smaller segments. To rename them with proper km info, you need to run https://github.com/dave/gpt/ afterwards. It expects a `GPT Master.kmz`in the working directory but its location can be also specified.
+It works on the GPT master KMZ file. For the file to be then usable by [Dave's GPT script](https://github.com/dave/gpt/, the resulting file needs to be opened once in Google Earth and saved. It mainly connects the endpoints so there are no gaps between tracks. This should make routing easier and it also looks prettier. It also divides tracks that meet another option variant and are not broken into smaller segments. To rename them with proper km info, you need to run Dave's script afterwards. It expects a `GPT Master.kmz`in the working directory, but its location can be also specified.
 
 ### Usage
 ```
@@ -83,11 +76,11 @@ options:
   -l2 SECOND_PASS_LIMIT, --second_pass_limit SECOND_PASS_LIMIT
                         Sets maximum distance under which points will be moved in second pass (default 10 m)
 ```
-# Build on Windows guest machine in Virtualbox #
+# Instructions to build exe files on Windows guest machine in Virtualbox #
 
-1. Install python in windows (download from python.org and run executable). 
+1. Install Python in Windows (download from python.org and run executable). 
 
-2. It must be added to PATH (WTF):
+2. It must be added to PATH (WTF?):
 
     a. look for "system variable" in start menu
 
@@ -112,3 +105,4 @@ options:
 
 # License #
 GPL 3, for all.
+
