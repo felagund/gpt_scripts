@@ -254,47 +254,56 @@ def make_style(code,filename):
 default_folder = "GPT Track Files YEAR/GPX Files (For Smartphone Apps)/"
 parser = argparse.ArgumentParser()
 parser.add_argument("-d","--directory",
-help='Default folder with tracks and waypoints, defaults to "' + default_folder + ' placed in the working directory. The folder is assumed to contain folders "Combined Tracks" and "Waypoints".')
+help='Sets default folder with tracks and waypoints. It defaults to "' + default_folder + ' placed in the working directory. The folder is assumed to contain folders "Combined Tracks" and "Waypoints".')
 parser.add_argument("-t","--tracks",
-help='Input file with all tracks, defaults to "' + default_folder + 'Combined Tracks/All Optional and Regular Tracks (SOME_DATE).gpx" placed in the working directory')
+help='Sets an input file with all the tracks. It defaults to "' + default_folder + 'Combined Tracks/All Optional and Regular Tracks (SOME_DATE).gpx" placed in the working directory.')
 
 parser.add_argument("-w","--waypoints",
-        help='Input filder with all waypoints, defaults to "' + default_folder + 'Waypoints/" placed in the working directory; it needs to contain the following files: "All Other Waypoints (SOME_DATE).gpx", "Important information (SOME_DATE).gpx" and "Ressuply Locations (SOME_DATE).gpx" (Starting points are not processed)')
+        help='Sets the input folder with all the waypoints. It defaults to "' + default_folder + 'Waypoints/" placed in the working directory. It must contain the following files: "All Other Waypoints (SOME_DATE).gpx", "Important information (SOME_DATE).gpx", "Ressuply Locations (SOME_DATE).gpx" and "Section Start and End Points (SOME_DATE)".')
 
 parser.add_argument("-ls","--locus_style",
-help='Input Locus style file, defaults to "locus_style.txt" placed in the working directory',
+help='Sets the input Locus style file. It defaults to "locus_style.txt" placed in the working directory.',
 default='locus_style.txt')
 
 parser.add_argument("-ic", "--icon_mapping",
-help='Input file mapping icons to waypoints, defaults to "icons.txt" placed in the working directory',
+help='Sets the input file that maps icons to waypoints. It defaults to "icons.txt" placed in the working directory.',
 default='icons.txt')
 
 parser.add_argument("-sg","--section_groups",
-help='Input section groups, defaults to "section_groups.txt" placed in the working directory',
+help='Sets input section groups. It defaults to "section_groups.txt" placed in the working directory.',
 default='section_groups.txt')
 
 parser.add_argument("-o","--output",
-help='Output directory, defaults to "GPX Files (For Locus Map app)" placed in the working directory; which it creates anew with every run, when different custom output directory is specified, no clearing takes place unless explicitly asked',
+help='Sets output directory. It defaults to "GPX Files (For Locus Map app)" placed in the working directory. It creates this directory anew with every run if present and the default is used. When a different custom output directory is specified, it does not get deleted unless specifically instructed (see the next option).',
 default='GPX Files (For Locus Map app)')
 
 parser.add_argument("--delete_previous_custom_output",
-help='If custom output directory specified, it will get deleted if this option is used',
+help='If a custom output directory is specified (see above), it will be first deleted if it previously exists.',
 action="store_true")
 
 args = parser.parse_args()
 
 print("Parsing input files")
 # Get default filename to read if not specified via command line
-if args.tracks:
-    tracks_filename = args.tracks
-else:
-    if args.directory:
+if args.directory:
         data_source_folder = Path(args.directory)
-    else:
+else:
+    try:
         d = next(Path(".").glob("GPT Track Files *"))
         data_source_folder = d / "GPX Files (For Smartphone Apps)/"
-    tracks_source_folder = data_source_folder / "Combined Tracks"
-    tracks_source_filename = next(tracks_source_folder.glob("All Optional and Regular Tracks*.gpx"))
+    except:
+        print('Did not find a directory with GPT track files in the working directory. It is expected to have a name starting with "GPT Track Files ". Aborting.')
+        sys.exit()
+
+if args.tracks:
+    tracks_source_filename = args.tracks
+else:
+    try:
+        tracks_source_folder = data_source_folder / "Combined Tracks"
+        tracks_source_filename = next(tracks_source_folder.glob("All Optional and Regular Tracks*.gpx"))
+    except:
+        print('Did not find the file with all the tracks. However GPT directory under "GPT Track Files */GPX Files (For Smartphone Apps)/" is present in the working directory. The expected file is supposed to be in that directory under "Combined Tracks/All Optional and Regular Tracks*.gpx". (Asterisks stand for unlimited wildcards in the nanes of directories and files. Abborting.')
+        sys.exit()
 
 # Get waypoint folder to read if not specified via command line
 if args.waypoints:
@@ -366,7 +375,7 @@ for icon in icons:
 
 # Open waypoints files
 waypoint_files =[]
-for x in "Waypoints","Important Inf??mation","Resupply Locations":
+for x in "Waypoints","Important Inf??mation","Resupply Locations","Section Start and End Points":
     try:
         filename = next(waypoints_source_folder.glob(x + "*.gpx"))
     except StopIteration:
