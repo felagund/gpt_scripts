@@ -106,3 +106,5 @@ options:
 # License #
 GPL 3, for all.
 
+[Providers.xml](https://github.com/felagund/gpt_scripts/blob/master/data/providers.xml) and [Strava.xml](https://github.com/felagund/gpt_scripts/blob/master/data/strava.xml) are taken from https://github.com/mjk912/LocusMapTweak/blob/master/providers.xml and https://download.freemap.sk/LocusMap/locus-providers.xml respectively.
+
