@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<providers>
+   <!-- red, blue, purple, gray -->
+   <!-- ride, run, water, winter -->
+
+   <!--
+let i = 1000;
+
+for (const color of ["blue", "purple", "red", "gray"]) {
+  for (const act of ["all", "ride", "run", "water", "winter"]) {
+    console.log(`   <provider id="${i++}" type="0" visible="true" required="false" background="-1">
+      <name>Strava Heatmap Freemap Proxy</name>
+      <mode>${
+        act === "all" ? "Combined" : act[0].toUpperCase() + act.slice(1)
+      } in ${color}</mode>
+      <url><![CDATA[https://strava-heatmap.tiles.freemap.sk/${act}/${color}/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-9</zoomPart>
+      <zoomMin>9</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>512</tileSize>
+      <countries>World</countries>
+      <usage>overlay${
+        act === "all"
+          ? ",cycle,hiking,ski,nautical"
+          : act === "ride"
+          ? ",cycle"
+          : act === "water"
+          ? ",natical"
+          : ""
+      }</usage>
+      <attribution>Strava</attribution>
+   </provider>
+`);
+  }
+}
+   -->
+
+   <provider id="1000" type="0" visible="true" required="false" background="-1">
+      <name>Strava Heatmap Freemap Proxy</name>
+      <mode>Combined in blue</mode>
+      <url><![CDATA[https://strava-heatmap.tiles.freemap.sk/all/blue/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-9</zoomPart>
+      <zoomMin>9</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>512</tileSize>
+      <countries>World</countries>
+      <usage>overlay,cycle,hiking,ski,nautical</usage>
+      <attribution>Strava</attribution>
+   </provider>
+
+   <provider id="1001" type="0" visible="true" required="false" background="-1">
+      <name>Strava Heatmap Freemap Proxy</name>
+      <mode>Ride in blue</mode>
+      <url><![CDATA[https://strava-heatmap.tiles.freemap.sk/ride/blue/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-9</zoomPart>
+      <zoomMin>9</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>512</tileSize>
+      <countries>World</countries>
+      <usage>overlay,cycle</usage>
+      <attribution>Strava</attribution>
+   </provider>
+
+   <provider id="1002" type="0" visible="true" required="false" background="-1">
+      <name>Strava Heatmap Freemap Proxy</name>
+      <mode>Run in blue</mode>
+      <url><![CDATA[https://strava-heatmap.tiles.freemap.sk/run/blue/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-9</zoomPart>
+      <zoomMin>9</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>512</tileSize>
+      <countries>World</countries>
+      <usage>overlay</usage>
+      <attribution>Strava</attribution>
+   </provider>
+
+   <provider id="1003" type="0" visible="true" required="false" background="-1">
+      <name>Strava Heatmap Freemap Proxy</name>
+      <mode>Water in blue</mode>
+      <url><![CDATA[https://strava-heatmap.tiles.freemap.sk/water/blue/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-9</zoomPart>
+      <zoomMin>9</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>512</tileSize>
+      <countries>World</countries>
+      <usage>overlay,natical</usage>
+      <attribution>Strava</attribution>
+   </provider>
+
+   <provider id="1004" type="0" visible="true" required="false" background="-1">
+      <name>Strava Heatmap Freemap Proxy</name>
+      <mode>Winter in blue</mode>
+      <url><![CDATA[https://strava-heatmap.tiles.freemap.sk/winter/blue/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-9</zoomPart>
+      <zoomMin>9</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>512</tileSize>
+      <countries>World</countries>
+      <usage>overlay</usage>
+      <attribution>Strava</attribution>
+   </provider>
+
+   <provider id="1005" type="0" visible="true" required="false" background="-1">
+      <name>Strava Heatmap Freemap Proxy</name>
+      <mode>Combined in purple</mode>
+      <url><![CDATA[https://strava-heatmap.tiles.freemap.sk/all/purple/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-9</zoomPart>
+      <zoomMin>9</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>512</tileSize>
+      <countries>World</countries>
+      <usage>overlay,cycle,hiking,ski,nautical</usage>
+      <attribution>Strava</attribution>
+   </provider>
+
+   <provider id="1006" type="0" visible="true" required="false" background="-1">
+      <name>Strava Heatmap Freemap Proxy</name>
+      <mode>Ride in purple</mode>
+      <url><![CDATA[https://strava-heatmap.tiles.freemap.sk/ride/purple/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-9</zoomPart>
+      <zoomMin>9</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>512</tileSize>
+      <countries>World</countries>
+      <usage>overlay,cycle</usage>
+      <attribution>Strava</attribution>
+   </provider>
+
+   <provider id="1007" type="0" visible="true" required="false" background="-1">
+      <name>Strava Heatmap Freemap Proxy</name>
+      <mode>Run in purple</mode>
+      <url><![CDATA[https://strava-heatmap.tiles.freemap.sk/run/purple/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-9</zoomPart>
+      <zoomMin>9</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>512</tileSize>
+      <countries>World</countries>
+      <usage>overlay</usage>
+      <attribution>Strava</attribution>
+   </provider>
+
+   <provider id="1008" type="0" visible="true" required="false" background="-1">
+      <name>Strava Heatmap Freemap Proxy</name>
+      <mode>Water in purple</mode>
+      <url><![CDATA[https://strava-heatmap.tiles.freemap.sk/water/purple/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-9</zoomPart>
+      <zoomMin>9</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>512</tileSize>
+      <countries>World</countries>
+      <usage>overlay,natical</usage>
+      <attribution>Strava</attribution>
+   </provider>
+
+   <provider id="1009" type="0" visible="true" required="false" background="-1">
+      <name>Strava Heatmap Freemap Proxy</name>
+      <mode>Winter in purple</mode>
+      <url><![CDATA[https://strava-heatmap.tiles.freemap.sk/winter/purple/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-9</zoomPart>
+      <zoomMin>9</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>512</tileSize>
+      <countries>World</countries>
+      <usage>overlay</usage>
+      <attribution>Strava</attribution>
+   </provider>
+
+   <provider id="1010" type="0" visible="true" required="false" background="-1">
+      <name>Strava Heatmap Freemap Proxy</name>
+      <mode>Combined in red</mode>
+      <url><![CDATA[https://strava-heatmap.tiles.freemap.sk/all/red/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-9</zoomPart>
+      <zoomMin>9</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>512</tileSize>
+      <countries>World</countries>
+      <usage>overlay,cycle,hiking,ski,nautical</usage>
+      <attribution>Strava</attribution>
+   </provider>
+
+   <provider id="1011" type="0" visible="true" required="false" background="-1">
+      <name>Strava Heatmap Freemap Proxy</name>
+      <mode>Ride in red</mode>
+      <url><![CDATA[https://strava-heatmap.tiles.freemap.sk/ride/red/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-9</zoomPart>
+      <zoomMin>9</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>512</tileSize>
+      <countries>World</countries>
+      <usage>overlay,cycle</usage>
+      <attribution>Strava</attribution>
+   </provider>
+
+   <provider id="1012" type="0" visible="true" required="false" background="-1">
+      <name>Strava Heatmap Freemap Proxy</name>
+      <mode>Run in red</mode>
+      <url><![CDATA[https://strava-heatmap.tiles.freemap.sk/run/red/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-9</zoomPart>
+      <zoomMin>9</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>512</tileSize>
+      <countries>World</countries>
+      <usage>overlay</usage>
+      <attribution>Strava</attribution>
+   </provider>
+
+   <provider id="1013" type="0" visible="true" required="false" background="-1">
+      <name>Strava Heatmap Freemap Proxy</name>
+      <mode>Water in red</mode>
+      <url><![CDATA[https://strava-heatmap.tiles.freemap.sk/water/red/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-9</zoomPart>
+      <zoomMin>9</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>512</tileSize>
+      <countries>World</countries>
+      <usage>overlay,natical</usage>
+      <attribution>Strava</attribution>
+   </provider>
+
+   <provider id="1014" type="0" visible="true" required="false" background="-1">
+      <name>Strava Heatmap Freemap Proxy</name>
+      <mode>Winter in red</mode>
+      <url><![CDATA[https://strava-heatmap.tiles.freemap.sk/winter/red/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-9</zoomPart>
+      <zoomMin>9</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>512</tileSize>
+      <countries>World</countries>
+      <usage>overlay</usage>
+      <attribution>Strava</attribution>
+   </provider>
+
+   <provider id="1015" type="0" visible="true" required="false" background="-1">
+      <name>Strava Heatmap Freemap Proxy</name>
+      <mode>Combined in gray</mode>
+      <url><![CDATA[https://strava-heatmap.tiles.freemap.sk/all/gray/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-9</zoomPart>
+      <zoomMin>9</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>512</tileSize>
+      <countries>World</countries>
+      <usage>overlay,cycle,hiking,ski,nautical</usage>
+      <attribution>Strava</attribution>
+   </provider>
+
+   <provider id="1016" type="0" visible="true" required="false" background="-1">
+      <name>Strava Heatmap Freemap Proxy</name>
+      <mode>Ride in gray</mode>
+      <url><![CDATA[https://strava-heatmap.tiles.freemap.sk/ride/gray/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-9</zoomPart>
+      <zoomMin>9</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>512</tileSize>
+      <countries>World</countries>
+      <usage>overlay,cycle</usage>
+      <attribution>Strava</attribution>
+   </provider>
+
+   <provider id="1017" type="0" visible="true" required="false" background="-1">
+      <name>Strava Heatmap Freemap Proxy</name>
+      <mode>Run in gray</mode>
+      <url><![CDATA[https://strava-heatmap.tiles.freemap.sk/run/gray/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-9</zoomPart>
+      <zoomMin>9</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>512</tileSize>
+      <countries>World</countries>
+      <usage>overlay</usage>
+      <attribution>Strava</attribution>
+   </provider>
+
+   <provider id="1018" type="0" visible="true" required="false" background="-1">
+      <name>Strava Heatmap Freemap Proxy</name>
+      <mode>Water in gray</mode>
+      <url><![CDATA[https://strava-heatmap.tiles.freemap.sk/water/gray/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-9</zoomPart>
+      <zoomMin>9</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>512</tileSize>
+      <countries>World</countries>
+      <usage>overlay,natical</usage>
+      <attribution>Strava</attribution>
+   </provider>
+
+   <provider id="1019" type="0" visible="true" required="false" background="-1">
+      <name>Strava Heatmap Freemap Proxy</name>
+      <mode>Winter in gray</mode>
+      <url><![CDATA[https://strava-heatmap.tiles.freemap.sk/winter/gray/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-9</zoomPart>
+      <zoomMin>9</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>512</tileSize>
+      <countries>World</countries>
+      <usage>overlay</usage>
+      <attribution>Strava</attribution>
+   </provider>
+
+   <provider id="2000" type="0" visible="true" required="false" background="-1">
+      <name>Freemap</name>
+      <mode>DMR5 hillshading</mode>
+      <url><![CDATA[https://dmr5-shading.tiles.freemap.sk/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-8</zoomPart>
+      <zoomMin>8</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>256</tileSize>
+      <countries>Slovakia</countries>
+      <usage>aero</usage>
+      <attribution>LLS: ÚGKK SK</attribution>
+   </provider>
+
+   <provider id="2004" type="0" visible="true" required="false" background="-1">
+      <name>Freemap</name>
+      <mode>DMR5 light hillshading</mode>
+      <url><![CDATA[https://dmr5-light-shading.tiles.freemap.sk/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-8</zoomPart>
+      <zoomMin>8</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>256</tileSize>
+      <countries>Slovakia</countries>
+      <usage>aero</usage>
+      <attribution>LLS: ÚGKK SK</attribution>
+   </provider>
+
+   <provider id="2005" type="0" visible="true" required="false" background="-1">
+      <name>Freemap</name>
+      <mode>DMP1 hillshading</mode>
+      <url><![CDATA[https://dmp1-shading.tiles.freemap.sk/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-8</zoomPart>
+      <zoomMin>8</zoomMin>
+      <zoomMax>26</zoomMax>
+      <tileSize>256</tileSize>
+      <countries>Slovakia</countries>
+      <usage>aero</usage>
+      <attribution>LLS: ÚGKK SK</attribution>
+   </provider>
+
+   <provider id="2001" type="0" visible="true" required="false" background="-1">
+      <name>Freemap</name>
+      <mode>Lesné cesty NLC</mode>
+      <url><![CDATA[https://tiles.freemap.sk/nlc2017/{z}/{x}/{y}.png]]></url>
+      <zoomPart>{z}-8</zoomPart>
+      <zoomMin>19</zoomMin>
+      <zoomMax>23</zoomMax>
+      <tileSize>256</tileSize>
+      <countries>Slovakia</countries>
+      <usage>cycle,hiking,road</usage>
+      <attribution>Národné lesnícke centrum</attribution>
+   </provider>
+
+   <provider id="2003" type="0" visible="true" required="false" background="-1">
+      <name>Freemap</name>
+      <mode>Ortofotomozaika SR 2017-2019</mode>
+      <url><![CDATA[https://ofmozaika1c.tiles.freemap.sk/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-8</zoomPart>
+      <zoomMin>8</zoomMin>
+      <zoomMax>27</zoomMax>
+      <tileSize>256</tileSize>
+      <countries>Slovakia</countries>
+      <usage>photo</usage>
+      <attribution>GKÚ Bratislava, NLC</attribution>
+   </provider>
+
+   <provider id="2002" type="0" visible="true" required="false" background="-1">
+      <name>Freemap</name>
+      <mode>Ortofotomozaika SR 2020-2022</mode>
+      <url><![CDATA[https://ofmozaika.tiles.freemap.sk/{z}/{x}/{y}.jpg]]></url>
+      <zoomPart>{z}-8</zoomPart>
+      <zoomMin>8</zoomMin>
+      <zoomMax>27</zoomMax>
+      <tileSize>256</tileSize>
+      <countries>Slovakia</countries>
+      <usage>photo</usage>
+      <attribution>GKÚ Bratislava, NLC</attribution>
+   </provider>
+</providers>
